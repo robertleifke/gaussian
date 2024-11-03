@@ -1,66 +1,15 @@
-## Foundry
+# Gaussian
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+⚠️ **WARNING**: This library is still under active development and not all functions have been thoroughly tested. It contains complex mathematical implementations that may contain errors. DO NOT use in production without comprehensive testing. Use at your own risk.
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
+A solidity library inspired by [solstat](https://github.com/primitivefinance/solstat) for implementing Gaussian distribution functions. It expands on [solidity-cdf](https://github.com/fiveoutofnine/solidity-cdf) to implement a few more statistical functions such as Percent Point Function (PPF) to approximate an inverse CDF. The Guassian library is ideal for custom automated market makers and will be used in [Numo](https://github.com/numotrade). 
 
 ## Usage
 
-### Build
-
-```shell
-$ forge build
+```bash
+forge install robertleifke/gaussian
 ```
 
-### Test
 
-```shell
-$ forge test
-```
 
-### Format
 
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
