@@ -10,6 +10,3 @@ A solidity library inspired by [solstat](https://github.com/primitivefinance/sol
 forge install robertleifke/gaussian
 ```
 
-
-
-
